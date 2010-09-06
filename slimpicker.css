@@ -41,7 +41,6 @@ input:focus.slimpicker{
 	box-shadow: #000 1px 1px 3px;
 	-webkit-box-shadow: #000 1px 1px 3px;
 	-moz-box-shadow: #000 1px 1px 3px;
-	behavior: url(ie-css3.htc);
 }
 .sp_cal table{
 	width: 100%;
