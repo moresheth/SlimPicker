@@ -1,0 +1,107 @@
+/* === SlimPicker Styles === */
+
+/* Styling for the input field */
+input.slimpicker{
+	background: #fff url(date.gif) no-repeat top left;
+	border: 1px solid #777;
+	border-bottom-color: #bbb;
+	border-right-color: #bbb;
+	cursor: pointer;
+	display: block;
+	padding: 3px 3px 3px 24px;
+}
+input:focus.slimpicker{
+	background: #fffce9 url(datefocus.gif) no-repeat top left;
+}
+
+/* Styling for the calendar that shows up */
+.sp_container{
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	padding: 0;
+	z-index: 500;
+/* These 4 will be set by the JS to match the input field */
+	height: 0;
+	left: 0;
+	top: 0;
+	width: 0;
+}
+.sp_cal{
+	color: #222;
+	background: #ccc;
+	background: -moz-linear-gradient(top, rgb(230,230,230), rgb(200,200,200));
+	background: -webkit-gradient(linear,left top,left bottom,from(rgb(230,230,230)),to(rgb(200,200,200)));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E6E6', endColorstr='#C8C8C8');
+	border: 1px solid #aaa;
+	border-bottom-color: #777;
+	border-right-color: #777;
+	width: 210px;
+	top: 24px;
+	position: absolute;
+	box-shadow: #000 1px 1px 3px;
+	-webkit-box-shadow: #000 1px 1px 3px;
+	-moz-box-shadow: #000 1px 1px 3px;
+	behavior: url(ie-css3.htc);
+}
+.sp_cal table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.sp_cal select{
+	margin: 2px 3px;
+	font-size: 11px;
+}
+.sp_cal select option{
+	padding: 1px 3px;
+}
+.sp_cal th,
+.sp_cal td{
+	width: 14.2857%;
+}
+.sp_cal th{
+	background: #999;
+	background: -moz-linear-gradient(top, rgb(160,160,160), rgb(140,140,140));
+	background: -webkit-gradient(linear,left top,left bottom,from(rgb(160,160,160)),to(rgb(140,140,140)));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A0A0A0', endColorstr='#8C8C8C');
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px 0;
+	text-shadow: #555 1px 1px 0;
+}
+.sp_cal thead th{
+	background: #ccc;
+	background: -moz-linear-gradient(top, rgb(230,230,230), rgb(200,200,200));
+	background: -webkit-gradient(linear,left top,left bottom,from(rgb(230,230,230)),to(rgb(200,200,200)));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E6E6', endColorstr='#C8C8C8');
+}
+.sp_cal td a{
+	display: block;
+	font-size: 11px;
+	padding: 2px 0;
+	text-align: center;
+	width: 100%;
+	text-shadow: #ddd 1px 1px 0;
+}
+.sp_cal td a:hover{
+	color: #fff;
+	background: #bc2d01;
+	text-shadow: #752e0b 1px 1px 0;
+}
+.sp_empty{
+	background: #aaa;
+}
+.sp_today{
+	background: #bbb;
+}
+.sp_selected{
+	background: #f5f5f5;
+}
+.sp_hover,
+.sp_hover a{
+	background: #EF8868;
+	color: #000;
+	text-shadow: #752e0b 1px 1px 0;
+}

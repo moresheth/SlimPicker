@@ -1,0 +1,117 @@
+/*
+	This file is not required for any of the scripts to work.
+	This is just for the demo page itself.
+	Feel free to use any of it you want, though.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+body{
+	background: #fff;
+	color: #444;
+	font-family: Georgia, serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+a{
+	color: #222;
+	outline: 0;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{
+	color: #bc2d01;
+}
+strong {
+	font-weight:bold;
+}
+h1{
+	font-size: 2em;
+	text-shadow: #aaa 1px 1px 1px;
+}
+h2{
+	font-size: 1.8em;
+}
+h3{
+	font-size: 1.5em;
+}
+p{
+	margin: 1em 0;
+}
+.container{
+	margin: 20px auto;
+	width: 300px;
+}
+
+.intro{
+	background: #999;
+	background: -moz-linear-gradient(top, rgb(160,160,160), rgb(140,140,140));
+	background: -webkit-gradient(linear,left top,left bottom,from(rgb(160,160,160)),to(rgb(140,140,140)));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A0A0A0', endColorstr='#8C8C8C');
+	border: 1px solid #888;
+	border-bottom-color: #aaa;
+	border-right-color: #aaa;
+	color: #222;
+	padding: 0 1em;
+	text-shadow: #aaa 1px 1px 0;
+}
+.action{
+	width: 200px;
+}
+.action a{
+	color: #222;
+	background: #ccc;
+	background: -moz-linear-gradient(top, rgb(210,210,210), rgb(180,180,180));
+	background: -webkit-gradient(linear,left top,left bottom,from(rgb(210,210,210)),to(rgb(180,180,180)));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D2D2D2', endColorstr='#B4B4B4');
+	border: 1px solid #eee;
+	border-bottom-color: #777;
+	border-right-color: #777;
+	display: block;
+	line-height: 2em;
+	padding: 0 .5em;
+	text-align: center;
+	text-shadow: #ddd 1px 1px 0;
+	zoom: 1;
+}
+.action a:hover{
+	background: #bc2d01;
+	border-color: #f15c37;
+	border-bottom-color: #752e0b;
+	border-right-color: #752e0b;
+	color: #fff;
+	text-shadow: #752e0b -1px -1px 0;
+}

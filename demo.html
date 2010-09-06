@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SlimPicker Demo Page</title>
+	<link rel="stylesheet" href="pagestyle.css" media="screen, projection" />
+	<link rel="stylesheet" href="slimpicker.css" media="screen, projection" />
+	<script src="mootools-1.2.4-core-yc.js"></script>
+	<script src="mootools-1.2.4.4-more-yc.js"></script>
+	<script src="slimpicker.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+	<h1>SlimPicker</h1>
+
+	<div class="intro">
+		<p>Date Picker that works in IFrames. Also allows for keyboard navigation.</p>
+	</div>
+
+	<p>
+		<label for="new_day">default calendar</label>
+		<input id="new_day" name="new_day" type="text" class="slimpicker" autocomplete="off" value="" />
+	</p>
+
+	<p>
+		<label for="birthday">calendar with options</label>
+		<input id="birthday" name="birthday" type="text" class="slimpicker" autocomplete="off" alt="{
+			dayChars:3,
+			dayNames:['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+			daysInMonth:[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+			format:'yyyy-mm-dd',
+			monthNames:['Januar', 'Februar', 'M&auml;rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+			startDay:1,
+			yearOrder:'desc',
+			yearRange:90,
+			yearStart:2007
+		}" value="1980-03-13" />
+	</p>
+
+</div>
+
+<script>
+
+$$('input.slimpicker').each( function(el){
+	var picker = new SlimPicker(el);
+});
+
+</script>
+
+</body>
+
+</html>
