@@ -37,6 +37,7 @@ var SlimPicker = new Class({
 
 		fadeDuration: 200,                // How fast the calendar fades in and out.
 		hideDelay: 500,                   // How long to wait to close the calendar after the mouse leaves.
+		extendedDelay: 5000,              // After a dropdown is open, how long to wait before we give up and hide the calendar.
 		showMonth: true,                  // Add the dropdown select for month.
 		showYear: true,                   // Add the dropdown select for year.
 		autoHide: true,                   // Without this, it won't set a timer to hide the calendar whenever you move away.
@@ -421,13 +422,16 @@ var SlimPicker = new Class({
 	},
 
 	// Whenever the dropdown is out, we disable the timer that makes the calendar disappear.
+	// We also set a longer timer, in case they don't actually make a selection.
 	markDropdownShowing: function() {
 		this.dropDownShowing = true;
+		this.extendedTimer = this.close.bind(this).delay(this.options.extendedDelay);
 	},
 
 	// They made a selection in one of the month/year dropdowns
 	selectChanged: function() {
 		this.dropDownShowing = false;
+		$clear(this.extendedTimer);
 		this.calendarMonth = this.monthSelect.get('value');
 		this.calendarYear = this.yearSelect.get('value');
 		this.draw();
